@@ -1,0 +1,264 @@
+# 社内向け管理画面デザインスタイル定義
+# 高級感のある洗練されたデザイン - エレガント・プレミアム風
+
+design_style:
+  name: "エレガント・プレミアム"
+  description: "落ち着いた色合いと洗練されたレイアウトで、高級感と信頼感のあるデザイン"
+
+  colors:
+    # プライマリカラー
+    primary: "#1a1a1a"
+    primary_hover: "#2d2d2d"
+    primary_text: "#ffffff"
+
+    # アクセントカラー
+    accent: "#8b7355"
+
+    # サイドバー
+    sidebar_bg: "#1f1f1f"
+    sidebar_text: "#b8b8b8"
+    sidebar_text_hover: "#ffffff"
+    sidebar_text_active: "#ffffff"
+    sidebar_active_bg: "rgba(139, 115, 85, 0.08)"
+    sidebar_active_border: "#8b7355"
+    sidebar_border: "rgba(255, 255, 255, 0.05)"
+
+    # メインエリア
+    main_bg: "#fafafa"
+    main_text: "#1a1a1a"
+    main_text_secondary: "#6b6b6b"
+
+    # ヘッダー
+    header_bg: "#ffffff"
+    header_text: "#1a1a1a"
+    header_border: "#d4d4d4"
+
+    # カード
+    card_bg: "#ffffff"
+    card_border: "#e5e5e5"
+    card_shadow: "0 1px 3px rgba(0, 0, 0, 0.06)"
+
+    # ボーダー・区切り線
+    border: "#d4d4d4"
+    border_light: "#e5e5e5"
+    border_dark: "#1a1a1a"
+
+    # 背景
+    bg_light: "#fafafa"
+    bg_medium: "#f5f5f5"
+    bg_dark: "#1f1f1f"
+
+    # 状態カラー
+    success: "#2e7d32"
+    success_bg: "#e8f5e9"
+    success_border: "#c8e6c9"
+    warning: "#e65100"
+    warning_bg: "#fff3e0"
+    warning_border: "#ffe0b2"
+    error: "#c62828"
+    error_bg: "#ffebee"
+    error_border: "#ffcdd2"
+
+    # セカンダリボタン
+    secondary_bg: "#ffffff"
+    secondary_bg_hover: "#fafafa"
+    secondary_text: "#1a1a1a"
+    secondary_border: "#d4d4d4"
+
+  typography:
+    font_family:
+      primary: "'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif"
+      mono: "'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace"
+
+    font_sizes:
+      xs: "0.75rem" # 12px
+      sm: "0.8125rem" # 13px
+      base: "0.9375rem" # 15px
+      lg: "1.25rem" # 20px
+      xl: "1.5rem" # 24px
+      "2xl": "1.75rem" # 28px
+
+    font_weights:
+      normal: "400"
+      medium: "500"
+      semibold: "600"
+
+    letter_spacing:
+      tight: "0.01em"
+      normal: "0.05em"
+      wide: "0.1em"
+
+    line_heights:
+      tight: "1.25"
+      normal: "1.5"
+      relaxed: "1.7"
+
+  sidebar:
+    width: "260px"
+    padding_x: "1.5rem" # 24px
+    padding_y: "2rem" # 32px
+    item_padding_x: "1rem" # 16px
+    item_padding_y: "0.875rem" # 14px
+    item_font_size: "0.9375rem" # 15px
+    item_margin_bottom: "0.5rem" # 8px
+    logo_font_size: "1.25rem" # 20px
+    logo_font_weight: "600"
+    logo_margin_bottom: "3rem" # 48px
+    logo_padding_bottom: "1.5rem" # 24px
+    logo_border_bottom: "1px solid rgba(255, 255, 255, 0.1)"
+    active_border_left: "2px solid #8b7355"
+    border_right: "1px solid rgba(255, 255, 255, 0.05)"
+
+  header:
+    height: "64px"
+    padding_x: "2.5rem" # 40px
+    padding_y: "0"
+    title_font_size: "1.5rem" # 24px
+    title_font_weight: "500"
+    border_bottom: "1px solid #d4d4d4"
+
+  components:
+    button:
+      primary:
+        bg: "#1a1a1a"
+        bg_hover: "#2d2d2d"
+        text: "#ffffff"
+        border: "1px solid #1a1a1a"
+        border_hover: "1px solid #2d2d2d"
+        radius: "2px"
+        padding_x: "1.5rem" # 24px
+        padding_y: "0.625rem" # 10px
+        font_size: "0.9375rem" # 15px
+        font_weight: "500"
+        letter_spacing: "0.01em"
+        transition: "background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease"
+
+      secondary:
+        bg: "#ffffff"
+        bg_hover: "#fafafa"
+        text: "#1a1a1a"
+        border: "1px solid #d4d4d4"
+        border_hover: "1px solid #8b7355"
+        radius: "2px"
+        padding_x: "1.5rem" # 24px
+        padding_y: "0.625rem" # 10px
+        font_size: "0.9375rem" # 15px
+        font_weight: "500"
+        letter_spacing: "0.01em"
+        transition: "background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease"
+
+      sizes:
+        small:
+          padding_x: "1rem" # 16px
+          padding_y: "0.5rem" # 8px
+          font_size: "0.875rem" # 14px
+
+        medium:
+          padding_x: "1.5rem" # 24px
+          padding_y: "0.625rem" # 10px
+          font_size: "0.9375rem" # 15px
+
+        large:
+          padding_x: "2rem" # 32px
+          padding_y: "0.75rem" # 12px
+          font_size: "1rem" # 16px
+
+    input:
+      bg: "#ffffff"
+      bg_focus: "#ffffff"
+      text: "#1a1a1a"
+      placeholder: "#9CA3AF"
+      border: "1px solid #d4d4d4"
+      border_focus: "1px solid #8b7355"
+      radius: "2px"
+      padding_x: "1rem" # 16px
+      padding_y: "0.75rem" # 12px
+      font_size: "0.9375rem" # 15px
+      transition: "border-color 0.2s ease"
+
+    card:
+      bg: "#ffffff"
+      border: "1px solid #e5e5e5"
+      radius: "4px"
+      padding: "2rem" # 32px
+      margin_bottom: "1.5rem" # 24px
+      shadow: "0 1px 3px rgba(0, 0, 0, 0.06)"
+      title_font_size: "1.25rem" # 20px
+      title_font_weight: "500"
+      title_margin_bottom: "1.5rem" # 24px
+      title_padding_bottom: "0.75rem" # 12px
+      title_border_bottom: "1px solid #d4d4d4"
+
+    table:
+      bg: "#ffffff"
+      header_bg: "#fafafa"
+      header_text: "#6b6b6b"
+      header_font_size: "0.8125rem" # 13px
+      header_font_weight: "500"
+      header_text_transform: "uppercase"
+      header_letter_spacing: "0.05em"
+      row_bg: "#ffffff"
+      row_bg_hover: "#fafafa"
+      row_border: "#d4d4d4"
+      cell_padding_x: "1.25rem" # 20px
+      cell_padding_y: "1rem" # 16px
+      cell_font_size: "0.9375rem" # 15px
+      margin_top: "1.5rem" # 24px
+
+    badge:
+      radius: "2px"
+      padding_x: "0.75rem" # 12px
+      padding_y: "0.25rem" # 4px
+      font_size: "0.75rem" # 12px
+      font_weight: "500"
+      letter_spacing: "0.01em"
+      success:
+        bg: "#e8f5e9"
+        text: "#2e7d32"
+        border: "1px solid #c8e6c9"
+      warning:
+        bg: "#fff3e0"
+        text: "#e65100"
+        border: "1px solid #ffe0b2"
+      error:
+        bg: "#ffebee"
+        text: "#c62828"
+        border: "1px solid #ffcdd2"
+
+  spacing:
+    base_unit: "0.25rem" # 4px
+    xs: "0.5rem" # 8px
+    sm: "1rem" # 16px
+    md: "1.5rem" # 24px
+    lg: "2rem" # 32px
+    xl: "2.5rem" # 40px
+    "2xl": "3rem" # 48px
+
+  effects:
+    shadows:
+      sm: "0 1px 3px rgba(0, 0, 0, 0.06)"
+      md: "0 2px 6px rgba(0, 0, 0, 0.08)"
+      lg: "0 4px 12px rgba(0, 0, 0, 0.1)"
+
+    borders:
+      width_thin: "1px"
+      width_normal: "1px"
+      width_thick: "2px"
+      style: "solid"
+
+    radius:
+      none: "0"
+      sm: "2px"
+      md: "4px"
+      lg: "8px"
+
+    transitions:
+      default: "0.2s ease"
+      fast: "0.15s ease"
+      slow: "0.3s ease"
+
+  scrollbar:
+    width: "8px"
+    track_bg: "#f5f5f5"
+    thumb_bg: "#c0c0c0"
+    thumb_bg_hover: "#a0a0a0"
